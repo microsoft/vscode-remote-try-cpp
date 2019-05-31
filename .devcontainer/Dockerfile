@@ -3,23 +3,21 @@
 # Licensed under the MIT License. See https://go.microsoft.com/fwlink/?linkid=2090316 for license information.
 #-------------------------------------------------------------------------------------------------------------
 
-FROM debian:9
+FROM debian:9-slim
 
 # Configure apt
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
-    && apt-get -y install --no-install-recommends apt-utils 2>&1
-
+    && apt-get -y install --no-install-recommends apt-utils 2>&1 && \
 # Install git, process tools, lsb-release (common in install instructions for CLIs)
-RUN apt-get -y install git procps lsb-release
-
+    apt-get -y install git procps lsb-release && \
 # Install C++ tools
-RUN apt-get -y install build-essential cmake cppcheck valgrind
-
+    apt-get -y install build-essential cmake cppcheck valgrind && \
 # Clean up
-RUN apt-get autoremove -y \
+    apt-get autoremove -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
+
 ENV DEBIAN_FRONTEND=dialog
 
 # Set the default shell to bash instead of sh
