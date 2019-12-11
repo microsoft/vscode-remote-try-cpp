@@ -1,14 +1,7 @@
 {
-	"name": "C++",
+	"name": "C++ Sample",
 	"dockerFile": "Dockerfile",
-
-	"runArgs": [
-		// Comment out the next line to run as root instead. Linux users, 
-		// update Dockerfile with your user's UID/GID if not 1000.
-		"-u", "vscode",
-		
-		"--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"
-	],
+	"runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
 
 	// Use 'settings' to set *default* container specific settings.json values on container create. 
 	// You can edit these settings after create using File > Preferences > Settings > Remote.
@@ -16,12 +9,17 @@
 		"terminal.integrated.shell.linux": "/bin/bash"
 	},
 
-	// Uncomment the next line if you want to publish any ports.
+	// Use 'appPort' to create a container with published ports. If the port isn't working, be sure
+	// your server accepts connections from all interfaces (0.0.0.0 or '*'), not just localhost.
 	// "appPort": [],
 
 	// Uncomment the next line to run commands after the container is created.
 	// "postCreateCommand": "gcc -v",
 
+	// Comment out the next line if you want to run as root instead
+	"remoteUser": "vscode",
+
+	// Add the IDs of extensions you want installed when the container is created in the array below.
 	"extensions": [
 		"ms-vscode.cpptools"
 	]
