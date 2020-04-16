@@ -3,6 +3,8 @@
 # Licensed under the MIT License. See https://go.microsoft.com/fwlink/?linkid=2090316 for license information.
 #-------------------------------------------------------------------------------------------------------------
 
+# To fully customize the contents of this image, use the following Dockerfile as a base and add the RUN statement from this file:
+# https://github.com/microsoft/vscode-dev-containers/blob/v0.112.0/containers/debian-10-git/.devcontainer/Dockerfile
 FROM mcr.microsoft.com/vscode/devcontainers/base:0-debian-10
 
 # This Dockerfile's base image has a non-root user with sudo access. Use the "remoteUser"
