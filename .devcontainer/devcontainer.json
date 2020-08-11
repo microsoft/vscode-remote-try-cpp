@@ -1,8 +1,12 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.112.0/containers/cpp
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.134.0/containers/cpp
 {
-	"name": "C++ Sample",
-	"dockerFile": "Dockerfile",
+	"name": "C++",
+	"build": {
+		"dockerfile": "Dockerfile",
+		// Update 'VARIANT' to pick an Debian OS version: buster, stretch
+		"args": { "VARIANT": "buster" }
+	},
 	"runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
 
 	// Set *default* container specific settings.json values on container create.
@@ -21,7 +25,7 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "gcc -v",
 
-	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+	// Comment out this line to run as root instead.
 	"remoteUser": "vscode"
 
 }
