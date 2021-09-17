@@ -1,11 +1,12 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.191.0/containers/cpp
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.195.0/containers/cpp
 {
 	"name": "C++",
 	"build": {
 		"dockerfile": "Dockerfile",
-		// Update 'VARIANT' to pick an Debian / Ubuntu OS version: debian-11, debian-10, debian-9, ubuntu-20.04, ubuntu-18.04
-		"args": { "VARIANT": "ubuntu-20.04" }
+		// Update 'VARIANT' to pick an Debian / Ubuntu OS version: debian-11, debian-10, debian-9, ubuntu-21.04, ubuntu-20.04, ubuntu-18.04
+		// Use Debian 11, Debian 9, Ubuntu 18.04 or Ubuntu 21.04 on local arm64/Apple Silicon
+		"args": { "VARIANT": "debian-11" }
 	},
 	"runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
 
