@@ -4,10 +4,10 @@
 using namespace std;
 
 int main() {
-    cout << "Hello World\n";
-    cout << "Input: ";
+    cout << "welcome to mineduc cafe\n";
+    cout << "press your order please!t: ";
     string data;
     getline(cin, data);
-    cout << "Output: " << data << "\n\n";
+    cout << "display all types of coffee in the room.: " << cafe late cappuccino mocha americano & hot chocolate << "\n\n";
     return 0;
 }
