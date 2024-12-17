@@ -1,0 +1,257 @@
+{
+	"Id": "4e3346d4e12de7328d096640ac2bf4bbccffbb259ddc93e7f0e44d939f69f733",
+	"Created": "2024-11-02T15:06:12.434412211Z",
+	"Path": "/bin/sh",
+	"Args": [
+		"-c",
+		"echo Container started\ntrap \"exit 0\" 15\n\nexec \"$@\"\nwhile sleep 1 & wait $!; do :; done",
+		"-"
+	],
+	"State": {
+		"Status": "running",
+		"Running": true,
+		"Paused": false,
+		"Restarting": false,
+		"OOMKilled": false,
+		"Dead": false,
+		"Pid": 2329,
+		"ExitCode": 0,
+		"Error": "",
+		"StartedAt": "2024-11-02T15:06:12.596176336Z",
+		"FinishedAt": "0001-01-01T00:00:00Z"
+	},
+	"Image": "sha256:beb8ab1e38a0a977aee1bcb73a9d6144e4db82aa1e4c3d43695840b2d1e5dd48",
+	"ResolvConfPath": "/var/lib/docker/containers/4e3346d4e12de7328d096640ac2bf4bbccffbb259ddc93e7f0e44d939f69f733/resolv.conf",
+	"HostnamePath": "/var/lib/docker/containers/4e3346d4e12de7328d096640ac2bf4bbccffbb259ddc93e7f0e44d939f69f733/hostname",
+	"HostsPath": "/var/lib/docker/containers/4e3346d4e12de7328d096640ac2bf4bbccffbb259ddc93e7f0e44d939f69f733/hosts",
+	"LogPath": "/var/lib/docker/containers/4e3346d4e12de7328d096640ac2bf4bbccffbb259ddc93e7f0e44d939f69f733/4e3346d4e12de7328d096640ac2bf4bbccffbb259ddc93e7f0e44d939f69f733-json.log",
+	"Name": "/flamboyant_ganguly",
+	"RestartCount": 0,
+	"Driver": "overlayfs",
+	"Platform": "linux",
+	"MountLabel": "",
+	"ProcessLabel": "",
+	"AppArmorProfile": "",
+	"ExecIDs": [
+		"cf0c2d57f80004f190422f3f854290556f97aa03511333f20bd5272445721bdb",
+		"4d1428d869e8e78b885d6bc393c9d10fda7cd7f097be18f4c9097db3ca219455",
+		"3ae5a340464a769b23bb9e10e2c86c7a5ec03aa44df243956221df830745e93a",
+		"5286f106ffe8bedebd037030ad257521f222f726cf61b4bc1ab1bb25992113fa",
+		"e6669fdef20c0df8c34cd56bc3c2e9a6028e4bb18052f0192aa9ccf52631267c",
+		"d6dd74b8f3598b66dd896c82159c5e5f72fdf6445b7ecc6ed69b58c8a3c4acea",
+		"cd7fbce965e6d5466b349abb608a9f3482d9b17f1817359ad51f39dcbfe0d0da"
+	],
+	"HostConfig": {
+		"Binds": null,
+		"ContainerIDFile": "",
+		"LogConfig": {
+			"Type": "json-file",
+			"Config": {}
+		},
+		"NetworkMode": "bridge",
+		"PortBindings": {},
+		"RestartPolicy": {
+			"Name": "no",
+			"MaximumRetryCount": 0
+		},
+		"AutoRemove": false,
+		"VolumeDriver": "",
+		"VolumesFrom": null,
+		"ConsoleSize": [
+			16,
+			100
+		],
+		"CapAdd": [
+			"SYS_PTRACE"
+		],
+		"CapDrop": null,
+		"CgroupnsMode": "private",
+		"Dns": [],
+		"DnsOptions": [],
+		"DnsSearch": [],
+		"ExtraHosts": null,
+		"GroupAdd": null,
+		"IpcMode": "private",
+		"Cgroup": "",
+		"Links": null,
+		"OomScoreAdj": 0,
+		"PidMode": "",
+		"Privileged": false,
+		"PublishAllPorts": false,
+		"ReadonlyRootfs": false,
+		"SecurityOpt": [
+			"seccomp=unconfined"
+		],
+		"UTSMode": "",
+		"UsernsMode": "",
+		"ShmSize": 67108864,
+		"Runtime": "runc",
+		"Isolation": "",
+		"CpuShares": 0,
+		"Memory": 0,
+		"NanoCpus": 0,
+		"CgroupParent": "",
+		"BlkioWeight": 0,
+		"BlkioWeightDevice": [],
+		"BlkioDeviceReadBps": [],
+		"BlkioDeviceWriteBps": [],
+		"BlkioDeviceReadIOps": [],
+		"BlkioDeviceWriteIOps": [],
+		"CpuPeriod": 0,
+		"CpuQuota": 0,
+		"CpuRealtimePeriod": 0,
+		"CpuRealtimeRuntime": 0,
+		"CpusetCpus": "",
+		"CpusetMems": "",
+		"Devices": [],
+		"DeviceCgroupRules": null,
+		"DeviceRequests": null,
+		"MemoryReservation": 0,
+		"MemorySwap": 0,
+		"MemorySwappiness": null,
+		"OomKillDisable": null,
+		"PidsLimit": null,
+		"Ulimits": [],
+		"CpuCount": 0,
+		"CpuPercent": 0,
+		"IOMaximumIOps": 0,
+		"IOMaximumBandwidth": 0,
+		"Mounts": [
+			{
+				"Type": "volume",
+				"Source": "vscode-remote-try-cpp-fbd84035be4f4e68f0395264bcf2de3407a7873ddd1f8ec50625929245a44913",
+				"Target": "/workspaces"
+			},
+			{
+				"Type": "volume",
+				"Source": "vscode",
+				"Target": "/vscode"
+			}
+		],
+		"MaskedPaths": [
+			"/proc/asound",
+			"/proc/acpi",
+			"/proc/kcore",
+			"/proc/keys",
+			"/proc/latency_stats",
+			"/proc/timer_list",
+			"/proc/timer_stats",
+			"/proc/sched_debug",
+			"/proc/scsi",
+			"/sys/firmware",
+			"/sys/devices/virtual/powercap"
+		],
+		"ReadonlyPaths": [
+			"/proc/bus",
+			"/proc/fs",
+			"/proc/irq",
+			"/proc/sys",
+			"/proc/sysrq-trigger"
+		]
+	},
+	"GraphDriver": {
+		"Data": null,
+		"Name": "overlayfs"
+	},
+	"Mounts": [
+		{
+			"Type": "volume",
+			"Name": "vscode-remote-try-cpp-fbd84035be4f4e68f0395264bcf2de3407a7873ddd1f8ec50625929245a44913",
+			"Source": "/var/lib/docker/volumes/vscode-remote-try-cpp-fbd84035be4f4e68f0395264bcf2de3407a7873ddd1f8ec50625929245a44913/_data",
+			"Destination": "/workspaces",
+			"Driver": "local",
+			"Mode": "z",
+			"RW": true,
+			"Propagation": ""
+		},
+		{
+			"Type": "volume",
+			"Name": "vscode",
+			"Source": "/var/lib/docker/volumes/vscode/_data",
+			"Destination": "/vscode",
+			"Driver": "local",
+			"Mode": "z",
+			"RW": true,
+			"Propagation": ""
+		}
+	],
+	"Config": {
+		"Hostname": "4e3346d4e12d",
+		"Domainname": "",
+		"User": "root",
+		"AttachStdin": false,
+		"AttachStdout": true,
+		"AttachStderr": true,
+		"Tty": false,
+		"OpenStdin": false,
+		"StdinOnce": false,
+		"Env": [
+			"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/vcpkg",
+			"VCPKG_ROOT=/usr/local/vcpkg",
+			"VCPKG_DOWNLOADS=/usr/local/vcpkg-downloads"
+		],
+		"Cmd": [
+			"-c",
+			"echo Container started\ntrap \"exit 0\" 15\n\nexec \"$@\"\nwhile sleep 1 & wait $!; do :; done",
+			"-"
+		],
+		"Image": "vsc-vscode-remote-try-cpp-df05a7d400b3175c788fa99ed213434b8b149a74c1ef75f3e0dd530350833975",
+		"Volumes": null,
+		"WorkingDir": "",
+		"Entrypoint": [
+			"/bin/sh"
+		],
+		"OnBuild": null,
+		"Labels": {
+			"dev.containers.id": "cpp",
+			"dev.containers.release": "v0.4.8",
+			"dev.containers.source": "https://github.com/devcontainers/images",
+			"dev.containers.timestamp": "Wed, 16 Oct 2024 21:12:15 GMT",
+			"dev.containers.variant": "bookworm",
+			"devcontainer.config_file": "/workspaces/vscode-remote-try-cpp/.devcontainer/devcontainer.json",
+			"devcontainer.metadata": "[ {\"id\":\"ghcr.io/devcontainers/features/common-utils:2\"}, {\"id\":\"ghcr.io/devcontainers/features/git:1\"}, {\"remoteUser\":\"vscode\"}, {\"id\":\"ghcr.io/devcontainers/features/git:1\"}, {\"customizations\":{\"vscode\":{\"extensions\":[\"ms-vscode.cpptools\",\"ms-vscode.cmake-tools\"]}},\"capAdd\":[\"SYS_PTRACE\"],\"securityOpt\":[\"seccomp=unconfined\"],\"remoteUser\":\"vscode\"}, {\"customizations\":{\"vscode\":{\"settings\":{},\"extensions\":[\"streetsidesoftware.code-spell-checker\"]}}} ]",
+			"version": "1.2.5",
+			"vsch.local.repository": "https://github.com/Microsoft/vscode-remote-try-cpp",
+			"vsch.local.repository.folder": "vscode-remote-try-cpp",
+			"vsch.local.repository.volume": "vscode-remote-try-cpp-fbd84035be4f4e68f0395264bcf2de3407a7873ddd1f8ec50625929245a44913"
+		}
+	},
+	"NetworkSettings": {
+		"Bridge": "",
+		"SandboxID": "e9f6ddbb087613b94b7f1a04f76af4693ff3cbd28e435164a0f5b51b34f8b2bb",
+		"SandboxKey": "/var/run/docker/netns/e9f6ddbb0876",
+		"Ports": {},
+		"HairpinMode": false,
+		"LinkLocalIPv6Address": "",
+		"LinkLocalIPv6PrefixLen": 0,
+		"SecondaryIPAddresses": null,
+		"SecondaryIPv6Addresses": null,
+		"EndpointID": "8ec0f7e24da7d80ccc5e6e8fc7c3a1ee9f0fe12451de3f05f7cd8390ef9b85da",
+		"Gateway": "172.17.0.1",
+		"GlobalIPv6Address": "",
+		"GlobalIPv6PrefixLen": 0,
+		"IPAddress": "172.17.0.3",
+		"IPPrefixLen": 16,
+		"IPv6Gateway": "",
+		"MacAddress": "02:42:ac:11:00:03",
+		"Networks": {
+			"bridge": {
+				"IPAMConfig": null,
+				"Links": null,
+				"Aliases": null,
+				"MacAddress": "02:42:ac:11:00:03",
+				"DriverOpts": null,
+				"NetworkID": "caa670a46ef4681213a03409fd4028692f3904026dab5dda0f476e7ab4b30149",
+				"EndpointID": "8ec0f7e24da7d80ccc5e6e8fc7c3a1ee9f0fe12451de3f05f7cd8390ef9b85da",
+				"Gateway": "172.17.0.1",
+				"IPAddress": "172.17.0.3",
+				"IPPrefixLen": 16,
+				"IPv6Gateway": "",
+				"GlobalIPv6Address": "",
+				"GlobalIPv6PrefixLen": 0,
+				"DNSNames": null
+			}
+		}
+	},
+	"Ports": []
+}
