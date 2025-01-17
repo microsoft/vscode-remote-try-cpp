@@ -18,8 +18,7 @@
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
                 }
-            ],
-            "preLaunchTask": "Build Main"
+            ]
         }
     ]
 }
