@@ -40,6 +40,11 @@ Follow these steps to open this sample in a container using the VS Code Dev Cont
 
 ## Things to try
 
+### Toolchain
+
+This sample uses the Debian 13 (Trixie) C++ image, including GCC, Clang, GDB, CMake, and vcpkg.
+Run `g++ -g main.cpp -o main.out` to build the sample, then `./main.out` to run it.
+
 Once you have this sample opened, you'll be able to work with it like you would locally.
 
 Some things to try:
